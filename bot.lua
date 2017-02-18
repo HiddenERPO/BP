@@ -2096,39 +2096,39 @@ local user_msgs = database:get('user:msgs'..msg.chat_id_..':'..msg.sender_user_i
 	-----------------------------------------------------------------------------------------------
   	if text:match("^[#!/]settings$") and is_mod(msg.sender_user_id_, msg.chat_id_) then
 	if database:get('bot:muteall'..msg.chat_id_) then
-	mute_all = 'Lock'
+	mute_all = '🔸قفل'
 	else
-	mute_all = 'Unlock'
+	mute_all = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:text:mute'..msg.chat_id_) then
-	mute_text = 'Lock'
+	mute_text = '🔸قفل'
 	else
-	mute_text = 'Unlock'
+	mute_text = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:photo:mute'..msg.chat_id_) then
-	mute_photo = 'Lock'
+	mute_photo = '🔸قفل'
 	else
-	mute_photo = 'Unlock'
+	mute_photo = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:video:mute'..msg.chat_id_) then
-	mute_video = 'Lock'
+	mute_video = '🔸قفل'
 	else
-	mute_video = 'Unlock'
+	mute_video = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:gifs:mute'..msg.chat_id_) then
-	mute_gifs = 'Lock'
+	mute_gifs = '🔸قفل'
 	else
-	mute_gifs = 'Unlock'
+	mute_gifs = '🔹آزاد'
 	end
 	------------
 	if database:get('anti-flood:'..msg.chat_id_) then
-	mute_flood = 'Unlock'
+	mute_flood = '🔹آزاد'
 	else
-	mute_flood = 'Lock'
+	mute_flood = '🔸قفل'
 	end
 	------------
 	if not database:get('flood:max:'..msg.chat_id_) then
@@ -2144,122 +2144,122 @@ local user_msgs = database:get('user:msgs'..msg.chat_id_..':'..msg.sender_user_i
 	end
 	------------
 	if database:get('bot:music:mute'..msg.chat_id_) then
-	mute_music = 'Lock'
+	mute_music = '🔸قفل'
 	else
-	mute_music = 'Unlock'
+	mute_music = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:bots:mute'..msg.chat_id_) then
-	mute_bots = 'Lock'
+	mute_bots = '🔸قفل'
 	else
-	mute_bots = 'Unlock'
+	mute_bots = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:inline:mute'..msg.chat_id_) then
-	mute_in = 'Lock'
+	mute_in = '🔸قفل'
 	else
-	mute_in = 'Unlock'
+	mute_in = '🔹آزاد'
 	end
 	------------
 	if database:get('bot:cmds'..msg.chat_id_) then
-	mute_cmd = 'Disable'
+	mute_cmd = '🔹غیرفعال'
 	else
-	mute_cmd = 'Enable'
+	mute_cmd = '🔸فعال'
 	end
 	------------
 	if database:get('bot:voice:mute'..msg.chat_id_) then
-	mute_voice = 'Lock'
+	mute_voice = '🔸قفل'
 	else
-	mute_voice = 'Unlock'
+	mute_voice = '🔹آزاد'
 	end
 	------------
 	if database:get('editmsg'..msg.chat_id_) then
-	mute_edit = 'Lock'
+	mute_edit = '🔸قفل'
 	else
-	mute_edit = 'Unlock'
+	mute_edit = '🔹آزاد'
 	end
     ------------
 	if database:get('bot:links:mute'..msg.chat_id_) then
-	mute_links = 'Lock'
+	mute_links = '🔸قفل'
 	else
-	mute_links = 'Unlock'
+	mute_links = '🔹آزاد'
 	end
     ------------
 	if database:get('bot:pin:mute'..msg.chat_id_) then
-	lock_pin = 'Lock'
+	lock_pin = '🔸قفل'
 	else
-	lock_pin = 'Unlock'
+	lock_pin = '🔹آزاد'
 	end 
     ------------
 	if database:get('bot:sticker:mute'..msg.chat_id_) then
-	lock_sticker = 'Lock'
+	lock_sticker = '🔸قفل'
 	else
-	lock_sticker = 'Unlock'
+	lock_sticker = '🔹آزاد'
 	end
 	------------
     if database:get('bot:tgservice:mute'..msg.chat_id_) then
-	lock_tgservice = 'Lock'
+	lock_tgservice = '🔸قفل'
 	else
-	lock_tgservice = 'Unlock'
+	lock_tgservice = '🔹آزاد'
 	end
 	------------
     if database:get('bot:webpage:mute'..msg.chat_id_) then
-	lock_wp = 'Lock'
+	lock_wp = '🔸قفل'
 	else
-	lock_wp = 'Unlock'
+	lock_wp = '🔹آزاد'
 	end
 	------------
     if database:get('bot:hashtag:mute'..msg.chat_id_) then
-	lock_htag = 'Lock'
+	lock_htag = '🔸قفل'
 	else
-	lock_htag = 'Unlock'
+	lock_htag = '🔹آزاد'
 	end
 	------------
     if database:get('bot:tag:mute'..msg.chat_id_) then
-	lock_tag = 'Lock'
+	lock_tag = '🔸قفل'
 	else
-	lock_tag = 'Unlock'
+	lock_tag = '🔹آزاد'
 	end
 	------------
     if database:get('bot:location:mute'..msg.chat_id_) then
-	lock_location = 'Lock'
+	lock_location = '🔸قفل'
 	else
-	lock_location = 'Unlock'
+	lock_location = '🔹آزاد'
 	end
 	------------
     if database:get('bot:contact:mute'..msg.chat_id_) then
-	lock_contact = 'Lock'
+	lock_contact = '🔸قفل'
 	else
-	lock_contact = 'Unlock'
+	lock_contact = '🔹آزاد'
 	end
 	------------
     if database:get('bot:english:mute'..msg.chat_id_) then
-	lock_english = 'Lock'
+	lock_english = '🔸قفل'
 	else
-	lock_english = 'Unlock'
+	lock_english = '🔹آزاد'
 	end
 	------------
     if database:get('bot:arabic:mute'..msg.chat_id_) then
-	lock_arabic = 'Lock'
+	lock_arabic = '🔸قفل'
 	else
-	lock_arabic = 'Unlock'
+	lock_arabic = '🔹آزاد'
 	end
 	------------
     if database:get('bot:forward:mute'..msg.chat_id_) then
-	lock_forward = 'Lock'
+	lock_forward = '🔸قفل'
 	else
-	lock_forward = 'Unlock'
+	lock_forward = '🔹آزاد'
 	end
 	------------
 	if database:get("bot:welcome"..msg.chat_id_) then
 	send_welcome = 'Enable'
 	else
-	send_welcome = 'Disable'
+	send_welcome = '🔹غیرفعال'
 	end
 	------------
 	local ex = database:ttl("bot:charge:"..msg.chat_id_)
                 if ex == -1 then
-				exp_dat = 'Unlimited'
+				exp_dat = 'نامحدود'
 				else
 				exp_dat = math.floor(ex / 86400) + 1
 			    end
